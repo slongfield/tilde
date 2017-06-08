@@ -114,7 +114,7 @@ set ffs=unix,dos,mac
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Linebreak on 500 characters
+" Linebreak on 100 characters
 set lbr
 set tw=100
 
