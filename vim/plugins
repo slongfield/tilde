@@ -33,6 +33,10 @@ let g:formatdef_python = ['autopep8']
 Plugin 'fatih/vim-go'
 let g:go_fmt_command = "goimports"
 
+" Rainbow Improved
+Plugin 'luochen1990/rainbow'
+let g:rainbow_active = 1
+
 call vundle#end()
 filetype plugin indent on
 au BufWrite *py :Autoformat
