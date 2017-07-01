@@ -33,9 +33,13 @@ let g:formatdef_python = ['autopep8']
 Plugin 'fatih/vim-go'
 let g:go_fmt_command = "goimports"
 
-" Rainbow Improved
+" Rainbow Improved. Only enable for parens
 Plugin 'luochen1990/rainbow'
 let g:rainbow_active = 1
+let g:rainbow_conf = {
+\	'operators': '',
+\	'parentheses': ['start=/(/ end=/)/ fold',],
+\}
 
 call vundle#end()
 filetype plugin indent on
