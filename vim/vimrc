@@ -25,7 +25,6 @@ filetype indent on
 
 " Turn on line numbering
 set number
-set relativenumber
 
 set nocompatible
 
