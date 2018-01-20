@@ -7,6 +7,7 @@
 " ===> Vundle plugins
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set rtp+=~/.vim/bundle/Vundle.vim
+filetype off
 call vundle#begin()
 
 "Vundle manage itself
@@ -32,6 +33,9 @@ let g:formatdef_python = ['autopep8']
 " Vim-go
 Plugin 'fatih/vim-go'
 let g:go_fmt_command = "goimports"
+
+" Vim-rust
+Plugin 'rust-lang/rust.vim'
 
 " Rainbow Improved. Only enable for parens
 Plugin 'luochen1990/rainbow'
