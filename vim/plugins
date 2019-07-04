@@ -29,13 +29,16 @@ let g:syntastic_python_python_exec = '/path/to/python3'
 " Autoformat
 Plugin 'Chiel92/vim-autoformat'
 let g:formatdef_python = ['autopep8']
+let g:formatdef_rust = ['rustfmt']
 
 " Vim-go
 Plugin 'fatih/vim-go'
 let g:go_fmt_command = "goimports"
+let g:go_version_warning = 0
 
 " Vim-rust
-Plugin 'rust-lang/rust.vim'
+ Plugin 'rust-lang/rust.vim'
+"  let g:rustfmt_autosave = 1
 
 " Rainbow Improved. Only enable for parens
 Plugin 'luochen1990/rainbow'
@@ -48,3 +51,4 @@ let g:rainbow_conf = {
 call vundle#end()
 filetype plugin indent on
 au BufWrite *py :Autoformat
+au BufWrite *rs :Autoformat
